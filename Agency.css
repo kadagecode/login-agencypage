@@ -1,0 +1,271 @@
+ *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+} 
+  
+#nav{
+    
+    
+    margin-top: 20px;
+   background-size: cover; 
+   padding-left: 700px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   display:flex
+   
+}
+.navb{
+    
+     border: 2px solid; 
+    border-radius: 25px ;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.navb:hover{
+    background-color: lightblue;
+}
+#navbox{
+    padding: 20px;
+    /* border: 2px solid; */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:lightblue;
+}
+#name{
+    padding-left: 10px;
+    font-size: large;
+}
+#dropdown{
+    margin-left: 95px;
+}
+#text{
+    height: 30px;
+    width: 400px;
+    padding-left: 5px;
+}
+#address1{
+    padding-left: 10px;
+    font-size: large;
+}
+#addinp1{
+    margin-top: 10px;
+    margin-left: 65px;
+    height: 30px;
+    width: 400px;
+    padding-left: 5px;
+}
+#address2{
+    padding-left: 10px;
+    font-size: large;
+}
+#addinp2{
+    margin-top: 10px;
+    margin-left: 65px;
+    height: 30px;
+    width: 400px;
+    padding-left: 5px;
+}
+#email{
+    padding-left: 10px;
+    font-size: large;
+}
+#emaildata{
+    margin-top: 10px;
+    margin-left: 95px;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#username{
+    padding-left: 10px;
+    font-size: large;
+}
+#usernamedata{
+    margin-top: 10px;
+    margin-left: 57px;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#place{
+    padding-left: 100px;
+    font-size: large;  
+}
+#placedata{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#phone{
+    padding-left: 193px;
+    font-size: large;  
+}
+#phonedata{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#password{
+    padding-left: 193px;
+    font-size: large;  
+}
+#passworddata{
+    margin-top: 10px;
+    margin-left: 27px;
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#nav{
+    margin-left: 25px;
+} 
+
+/* tabs */
+.tab {
+    overflow: hidden;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    margin-top: 50px;
+  }
+
+  .tab button {
+    background-color: white;
+    /* float: left; */
+    /* border: none; */
+     outline: none; 
+    cursor: pointer;
+    padding: 8px 13px;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 10px;
+    display: inline-block;
+    display: inline-flex;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 300px;
+    background-color: lightgray;
+  }
+  /* .tab button */
+  .active {
+    background-color: #ccc;
+  }
+
+  /* inside tabs data css registration details */
+  #reg{
+      margin-top: 40px;
+     margin-left: 100px;
+     font-size: large
+  }
+  .databox{
+      margin-left: 80px;
+      margin-top: 20px;
+    height: 30px;
+    width: 200px;
+  }
+  #registrationclass{
+    margin-left: 87px;
+    font-size: large
+  }
+  #registrationupto{
+    margin-left: 87px;
+    font-size: large
+  }
+  /* registration details rightside */
+  #vatno{
+      margin-left: 200px;
+    font-size: large
+  }
+  .databoxright{
+      margin-left: 50px;
+    height: 30px;
+    width: 200px;
+  }
+  #panno{
+    margin-left: 200px;
+    font-size: large
+  }
+/* bank details tab */
+#banknamedetails{
+    margin-left: 50px;
+    margin-top: 20px;
+  height: 30px;
+  width: 400px;
+}
+#bankname{
+    margin-top: 40px;
+     margin-left: 100px;
+     font-size: large
+}
+#bankbranchdetails{
+    margin-left: 50px;
+    margin-top: 20px;
+  height: 30px;
+  width: 300px;
+}
+#bankbranch{
+    margin-top: 40px;
+     margin-left: 90px;
+     font-size: large
+}
+#accno{
+    margin-top: 40px;
+     margin-left: 122px;
+     font-size: large
+}
+#accdetails{
+    margin-left: 50px;
+    margin-top: 20px;
+  height: 30px;
+  width: 300px;
+}
+/* bankdetails rightside */
+#ifscno{
+    margin-left: 150px;
+    font-size: large
+}
+#micrno{
+    margin-left: 244px;
+    font-size: large 
+}
+/* key person details */
+#keyname{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: large
+}
+.keydetails{
+    margin-left: 50px;
+    margin-top: 20px;
+  height: 30px;
+  width: 300px;
+}
+#keyphoneno{
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: large
+}
+#keyemailid{
+    margin-top: 40px;
+    margin-left: 80px;
+    font-size: large 
+}
+
+  
+  

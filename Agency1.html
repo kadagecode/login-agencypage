@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="D:\Desktop\My\Desktop\html\Agency1.css">
+  <title>Document</title>
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+    <div class="container-fluid ">
+       
+    <button type="button" class="navbar-toggler btn btn-primary" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+       </button>    
+        <div class="collapse navbar-collapse p-3 mb-2 bg-dark text-white  " id="navbarCollapse">
+        <div class="navbar-nav ms-auto ">
+        <div class="navb">Home</div>
+        <div class="navb">Login</div>
+        <div class="navb">Work-Master</div>
+        <div class="navb">Divisions</div>
+        <div class="navb">Sub-divisions</div>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <!-- nav box -->
+       <div id="navbox"></div>
+       </div>
+        <br>
+
+        <!-- form -->
+    <div class="m-3">
+       
+        <form action="">
+            <div class="row ">
+                <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3 col-form-label">
+                    <label for="" id="name">Name :</label>
+                </div>
+            
+                <div class="col-xs-2 col-sm-9 col-md-3 col-lg-4" id="dropdown">
+                    <select name="" >
+                        <option >Mr.</option>
+                        <option >Ms.</option>
+                    </select>
+                  
+                      <input type="text" id="text">
+                </div>
+      
+            </div>
+       <br>
+       <div class="row ">
+
+           <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3 col-form-label">
+             <label for="" id="address1">Address 1 :</label>
+           </div>
+
+            <div class="col-xs-2 col-sm-9 col-md-3 col-lg-5">
+                <input type="text" id="addinp1">
+            </div>
+            
+            
+      </div>
+
+      <br>
+
+      <div class="row ">
+          
+         <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+            <label for="" id="address2">Address 2 :</label>
+         </div>   
+            <div class="col-xs-2 col-sm-9 col-md-9 col-lg-7"> 
+            <input type="text" id="addinp2">
+            </div> 
+         
+           
+          
+              
+                  <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+                    <label for="" id="place">Place :</label>
+                      </div>
+                 <div class="col-xs-2 col-sm-9 col-md-3 col-lg-5">   
+                    <input type="text" id="placedata">
+           
+               </div> 
+          
+         
+            
+        
+        </div>  
+
+
+        
+      <br>
+
+             <div class="row">
+
+                <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+     
+                <label for="" id="email">Email :</label>
+               </div>
+        
+                <div class="col-xs-2 col-sm-9 col-md-9 col-lg-7">
+                <input type="email" name="" id="emaildata">
+                 </div>
+                 <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+                <label for="" id="phone">Phone :</label>
+                 </div>
+                  <div class="col-xs-2 col-sm-9 col-md-3 col-lg-5">
+                  <input type="tel" name="" id="phonedata" pattern="[0-9]{10}" required>
+                </div>
+           </div>      
+                
+
+    
+      <br>
+
+      <div class="row">
+              <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+               <label for="" id="username">User Name :</label>
+               </div>
+               <div class="col-xs-2 col-sm-9 col-md-9 col-lg-7">
+              <input type="text" id="usernamedata">
+               </div>
+               <div class="col-xs-2 col-sm-9 col-md-3 col-lg-3">
+              <label for=""id="password">Password :</label>
+            </div>
+             <div class="col-xs-2 col-sm-9 col-md-3 col-lg-5">
+                <input type="password" id="passworddata" pattern="^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$" title="Minimum of 7 characters. Should have at least one special character and one number and one UpperCase Letter." required minlength="7" ></div>
+              </div>
+            </div>   
+    </form>
+ </div>
+
+
+<!-- tabs -->
+
+<div class="tab">
+    <button class="tablinks" onclick="details(event, 'Registrationdetails')" id="defaultOpen">Registration Details</button>
+    <button class="tablinks" onclick="details(event, 'Bankdetails')">Bank Details</button>
+    <button class="tablinks" onclick="details(event, 'Keypersondetails')">Key Person Details</button>
+  </div>
+
+
+  <!-- registration form -->
+    
+  <div id="Registrationdetails" class="tabcontent">  
+    <br>
+    <div class="m-5">
+    <form action="">
+        <div class="row">
+            <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+               <label for="" id="reg">Registration No :</label>
+            </div>
+            <div class="col-xs-2 col-sm-9 col-md-7 col-lg-3">
+                <input type="number" placeholder="Please give the no" class="databox" maxlength="10" required >
+            </div> 
+            <div class="col-xs-2 col-sm-9 col-md-4 col-lg-1">
+                <label for="" id="gstno">GST No :</label>
+            </div> 
+            <div class="col-xs-2 col-sm-9 col-md-2 col-lg-5">
+                <input type="number" maxlength="10" required class="databoxright">
+            </div>
+         </div>
+    <br>
+
+    <div class="row">
+        <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+          <label for="" id="registrationclass">Registration class :</label>
+        </div>
+        <div class="col-xs-2 col-sm-9 col-md-7 col-lg-3">
+         <select name="" id="" class="databox" onchange="showsubdropdown(this)">
+            <option value="">I</option>
+            <option value="">II</option>
+            <option value="">III</option>
+            <option value="">IV</option>
+            <option value="">V</option>
+            <option value="VI">VI</option>
+            <option value="">VI-A</option>
+            <option value="">VI-B</option>
+            <option value="">VI-C</option>
+          </select>
+          <!-- <div id="subdropdown">
+             <label for="VI">VI</label> -->
+            <!-- <select  id="VI" style="display: none;">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+            
+          </div> --> 
+        </div>
+        <div class="col-xs-2 col-sm-9 col-md-4 col-lg-1">
+             <label for="" id="panno">PAN No :</label>
+        </div>
+        <div class="col-xs-2 col-sm-9 col-md-2 col-lg-3">
+            <input type="number" maxlength="10" required class="databoxright">
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+               <label for="" id="registrationupto">Regestration upto :</label>
+        </div>
+         <div class="col-xs-2 col-sm-9 col-md-4 col-lg-5">
+             <input type="date" name="" id="" class="databox">
+        </div>
+    </div>
+   </form>
+  </div>
+ </div>
+
+
+  <!-- bank details -->
+   
+  <div id="Bankdetails" class="tabcontent">
+    <br>
+    <div class="m-5">
+    <form action="">
+        <div class="row">
+            <div class="col-xs-2 col-sm-9 col-md-3 col-lg-2">
+                <label for="" id="bankname">Bank Name :</label>
+            </div>
+            <div class="col-xs-2 col-sm-9 col-md-7 col-lg-9">
+                <input type="text" id="banknamedetails">
+            </div>
+            <div class="col-xs-2 col-sm-9 col-md-3 col-lg-2">
+                <label for="" id="ifscno">IFSC No :</label>
+            </div>
+            <div class="col-xs-2 col-sm-9 col-md-2 col-lg-9">
+                <input type="text"  class="databoxright">
+            </div>
+        </div>
+
+        <br>
+
+
+          <div class="row">  
+            <div class="col-xs-2 col-sm-9 col-md-3 col-lg-2">
+                    <label for="" id="bankbranch">Bank Branch :</label>
+             </div>
+             <div class="col-xs-2 col-sm-9 col-md-7 col-lg-9">
+                      <input type="text" id="bankbranchdetails">
+             </div>
+             <div class="col-xs-2 col-sm-9 col-md-3 col-lg-2">
+                      <label for="" id="micrno">MICR No :</label>
+             </div>
+             <div class="col-xs-2 col-sm-9 col-md-2 col-lg-9">     
+                      <input type="text" class="databoxright">
+             </div>
+            </div> 
+
+              <br>  
+
+          <div class="row">
+              <div class="col-xs-2 col-sm-9 col-md-3 col-lg-2">
+                <label for="" id="accno">ACC No :</label>
+            </div>
+            <div class="col-xs-2 col-sm-9 col-md-2 col-lg-5">
+                <input type="text" id="accdetails">
+            </div>
+        </div>
+           
+  </form>
+   </div>
+  </div>
+
+
+  <!-- key person details -->
+  <div id="Keypersondetails" class="tabcontent">
+    <br>
+    <div class="m-5">
+    <form action="">
+    <div class="row">
+      <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+      <label for="" id="keyname">Key Person Name :</label>
+      </div>
+      <div class="col-xs-2 col-sm-9 col-md-2 col-lg-5">
+    <input type="text"  class="keydetails"  >
+      </div>
+      </div>
+    <br>
+    <div class="row">
+    <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+    <label for="" id="keyphoneno">Key Person Phone No :</label>
+     </div>
+     <div class="col-xs-2 col-sm-9 col-md-2 col-lg-5">
+    <input type="tel"  class="keydetails"  >
+     </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-2 col-sm-9 col-md-4 col-lg-2">
+    <label for="" id="keyemailid">Key Person Email Id :</label>
+      </div>
+      <div class="col-xs-2 col-sm-9 col-md-2 col-lg-5">
+    <input type="email"  class="keydetails"  >
+      </div>
+    </div>
+
+    </form>
+ </div>
+  </div>
+  
+
+  
+
+  
+  <!-- javascript connection of tabs -->
+ <script>
+     function details(evt, detailsname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(detailsname).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+
+
+ </script>
+
+
+
+</body>
+</html>
+
+

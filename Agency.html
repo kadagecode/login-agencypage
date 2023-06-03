@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Agency.css">
+
+</head>
+<body>
+  <div>
+    <!-- nav bar -->
+    <nav id="nav">
+        <div class="navb">Home</div>
+        <div class="navb">Login</div>
+        <div class="navb">Work-Master</div>
+        <div class="navb">Divisions</div>
+        <div class="navb" >Sub-divisions</div>
+       </nav>
+       <div id="navbox"></div>
+       <br> 
+       <!-- form -->
+       <form action="">
+       <label for="" id="name">Name :</label>
+       <select name="" id="dropdown">
+           <option >Mr.</option>
+           <option >Ms.</option>
+       </select>
+       <input type="text" id="text">
+       <br>
+      <label for="" id="address1">Address 1 :</label>
+      <input type="text" id="addinp1">
+      <br>
+      <label for="" id="address2">Address 2 :</label>
+      <input type="text" id="addinp2">
+      <label for="" id="place">Place :</label>
+      <input type="text" id="placedata">
+      <br>
+      <label for="" id="email">Email :</label>
+      <input type="email" name="" id="emaildata">
+      <label for="" id="phone">Phone :</label>
+      <input type="tel" name="" id="phonedata" pattern="[0-9]{10}" required>
+      <br>
+      <label for="" id="username">User Name :</label>
+      <input type="text" id="usernamedata">
+      <label for=""id="password">Password :</label>
+    <input type="password" id="passworddata" pattern="^(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$" title="Minimum of 7 characters. Should have at least one special character and one number and one UpperCase Letter." required minlength="7" ></div>
+      </form> 
+    <br>
+  </div>
+     <!-- tabs -->
+    
+     <div class="tab">
+      <button class="tablinks" onclick="details(event, 'Registrationdetails')" id="defaultOpen">Registration Details</button>
+      <button class="tablinks" onclick="details(event, 'Bankdetails')">Bank Details</button>
+      <button class="tablinks" onclick="details(event, 'Keypersondetails')">Key Person Details</button>
+    </div>
+    <!-- registration form -->
+    
+    <div id="Registrationdetails" class="tabcontent">  
+      <br>
+      <br>  
+      <form action=""></form>
+        <label for="" id="reg">Registration No :</label>
+      <input type="number" placeholder="Please give the no" class="databox" maxlength="10" required >
+      <label for="" id="vatno">GST No :</label>
+      <input type="number" maxlength="10" required class="databoxright">
+      <br>
+      <label for="" id="registrationclass">Registration class :</label>
+      <select name="" id="" class="databox">
+        <option value="">I</option>
+        <option value="">II</option>
+        <option value="">III</option>
+        <option value="">IV</option>
+        <option value="">V</option>
+        <option value="">VI</option>
+      </select>
+      <label for="" id="panno">PAN No :</label>
+      <input type="number" maxlength="10" required class="databoxright">
+      <br>
+      <label for="" id="registrationupto">Regestration upto :</label>
+      <input type="date" name="" id="" class="databox">
+    </form>
+    </div>
+    <!-- bank details -->
+   
+    <div id="Bankdetails" class="tabcontent">
+      <br>
+      <br>
+      <form action="">
+      <label for="" id="bankname">Bank Name :</label>
+      <input type="text" id="banknamedetails">
+      <label for="" id="ifscno">IFSC No :</label>
+      <input type="text"  class="databoxright">
+      <br>
+      <label for="" id="bankbranch">Bank Branch :</label>
+      <input type="text" id="bankbranchdetails">
+      <label for="" id="micrno">MICR No :</label>
+      <input type="text" class="databoxright">
+      <br>
+      <label for="" id="accno">ACC No :</label>
+      <input type="text" id="accdetails">
+    </form>
+    </div>
+  
+        <!-- key person details -->
+    <div id="Keypersondetails" class="tabcontent">
+      <br>
+      <br>
+      <form action="">
+        <label for="" id="keyname">Key Person Name :</label>
+      <input type="text"  class="keydetails"  >
+      <br>
+      <label for="" id="keyphoneno">Key Person Phone No :</label>
+      <input type="tel"  class="keydetails"  >
+      <br>
+      <label for="" id="keyemailid">Key Person Email Id :</label>
+      <input type="email"  class="keydetails"  >
+
+      </form>
+    </div>
+    
+    <!-- javascript connection tabs -->
+    <script>
+
+  
+      function details(evt, detailsname) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(detailsname).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      
+      </script>
+         
+
+    
+    
+      
+
+      
+</body>
+</html>

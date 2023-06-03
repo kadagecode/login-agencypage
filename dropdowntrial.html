@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown Within Dropdown</title>
+  <script>
+    function showSubDropdown(selectElement) {
+      var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+      var subDropdown = document.getElementById('subDropdown');
+      
+      // Hide all sub-dropdowns
+      var subDropdowns = subDropdown.getElementsByTagName('select');
+      for (var i = 0; i < subDropdowns.length; i++) {
+        subDropdowns[i].style.display = 'none';
+      }
+      
+      // Show the selected sub-dropdown
+      if (selectedOption !== 'none') {
+        var selectedSubDropdown = document.getElementById(selectedOption);
+        selectedSubDropdown.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <label for="mainDropdown">Main Dropdown:</label>
+  <select id="mainDropdown" onchange="showSubDropdown(this)">
+    <option value="none">Select an option</option>
+    <option value="subDropdown1">Sub Dropdown 1</option>
+    <option value="subDropdown2">Sub Dropdown 2</option>
+  </select>
+
+  <div id="subDropdown">
+    <label for="subDropdown1">Sub Dropdown 1:</label>
+    <select id="subDropdown1" style="display: none;">
+      <option value="none">Select an option</option>
+      <option value="subOption1">Sub Option 1</option>
+      <option value="subOption2">Sub Option 2</option>
+    </select>
+
+    <label for="subDropdown2">Sub Dropdown 2:</label>
+    <select id="subDropdown2" style="display: none;">
+      <option value="none">Select an option</option>
+      <option value="subOption3">Sub Option 3</option>
+      <option value="subOption4">Sub Option 4</option>
+    </select>
+  </div>
+</body>
+</html>
